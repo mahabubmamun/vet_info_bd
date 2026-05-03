@@ -169,7 +169,8 @@ const DoctorDetail = ({ doctor, navigateTo, showToast }) => {
   // Function to handle WhatsApp redirect
   const handleWhatsAppRedirect = () => {
     // Clean the phone number (remove +, spaces, dashes)
-    let phoneNumber = doctor.phone.replace(/[+\s\-]/g, '');
+    // let phoneNumber = doctor.phone.replace(/[+\s-]/g, '');
+    let phoneNumber = doctor.phone.replace(/[+\s-]/g, '');
     
     // Remove any non-digit characters
     phoneNumber = phoneNumber.replace(/\D/g, '');
@@ -228,7 +229,8 @@ const DoctorDetail = ({ doctor, navigateTo, showToast }) => {
             <a href={`tel:${doctor.phone}`} className="contact-link">
               <i className="fa-solid fa-phone"></i> {doctor.phone}
             </a>
-            <a href={`https://wa.me/${doctor.phone.replace(/[+\s\-]/g, '')}`} target="_blank" rel="noopener noreferrer" className="contact-link">
+            <a href={`https://wa.me/${doctor.phone.replace(/[+\s-]/g, '')}`} target="_blank" rel="noopener noreferrer" className="contact-link">
+            {/* <a href={`https://wa.me/${doctor.phone.replace(/[+\s-]/g, '')}`} target="_blank" rel="noopener noreferrer" className="contact-link"></a> */}
               <i className="fa-brands fa-whatsapp"></i> WhatsApp
             </a>
             <a href={doctor.map} target="_blank" rel="noopener noreferrer" className="contact-link">
