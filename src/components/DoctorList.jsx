@@ -453,7 +453,7 @@ const DoctorList = ({ doctors, navigateTo, showToast }) => {
 
   useEffect(() => {
     filterDoctors();
-  }, [filters, doctors]);
+  }, [filters, doctors, filteredDoctors]);
 
   const handleFilterChange = (field, value) => {
     setFilters(prev => ({ ...prev, [field]: value }));
@@ -504,7 +504,7 @@ const DoctorList = ({ doctors, navigateTo, showToast }) => {
   // Trigger filter when any filter changes
   useEffect(() => {
     filterDoctors();
-  }, [filters]);
+  }, [filters, filteredDoctors]);
 
   const divisions = Object.keys(locationData);
 

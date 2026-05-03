@@ -4,7 +4,7 @@ import BlogSection from './BlogSection';
 import ImportantLinks from './ImportantLinks';
 
 const HomePage = ({ pets, vaccineRecords, blogs, navigateTo }) => {
-  const today = new Date().toISOString().split('T')[0];
+  // const today = new Date().toISOString().split('T')[0];
   const sevenDaysLater = new Date();
   sevenDaysLater.setDate(sevenDaysLater.getDate() + 7);
   const sevenDaysStr = sevenDaysLater.toISOString().split('T')[0];

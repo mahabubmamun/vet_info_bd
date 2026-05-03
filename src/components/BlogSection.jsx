@@ -42,7 +42,7 @@ const BlogSection = ({ blogs }) => {
       <div className="section-header">
         <h2 className="section-title">সাম্প্রতিক ব্লগ</h2>
 
-        <a href="#" className="see-all">
+        <a href="/" className="see-all">
           সব দেখুন <i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>

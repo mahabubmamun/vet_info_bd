@@ -714,7 +714,7 @@
 
 // export default VaccineTracker;
 
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import VaccineInfoSection from './VaccineInfoSection';
 // import './VaccineTracker.css';
 
